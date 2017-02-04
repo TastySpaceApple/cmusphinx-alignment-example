@@ -15,8 +15,7 @@ Build Sphinx4, which is a Java library:
 
 	git clone https://github.com/cmusphinx/sphinx4
 	cd sphinx4/sphinx4-core
-	git revert aa4e1838f06eb032fd248601469b16ac95aeb08a
-	mvn clean install
+	gradle build
 	cd ../..
 
 Fetch
@@ -24,7 +23,7 @@ Fetch
 
 You'll need an acoustic model. Here I'm using English:
 
-	wget http://downloads.sourceforge.net/project/cmusphinx/Acoustic%20and%20Language%20Models/US%20English%20Generic%20Acoustic%20Model/cmusphinx-en-us-5.2.tar.gz
+	wget https://downloads.sourceforge.net/project/cmusphinx/Acoustic%20and%20Language%20Models/US%20English/cmusphinx-en-us-5.2.tar.gz
 	tar -zxf cmusphinx-en-us-5.2.tar.gz
 
 Test
